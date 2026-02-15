@@ -9,6 +9,7 @@
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 
 \geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
@@ -288,25 +289,25 @@ V = \{S, T\} \cup \bigcup_{i=1}^k V(P_i),
     
     \item Рассмотрим три последовательные вершины $\operatorname{prev}(cur)$, $cur$ и $\operatorname{next}(cur)$. 
     Если эти вершины образуют поворот по часовой стрелке, то вершина $cur$ является вогнутой, 
-    и все инцидентные ей ребра в графе видимости являются незначащими согласно теореме~\ref{thm:minor_edge} (рис. 1). 
+    и все инцидентные ей ребра в графе видимости являются незначащими согласно теореме~\ref{thm:minor_edge} (рис. \ref{fig:concave}). 
     Следовательно, такая вершина $cur$ может быть полностью исключена из рассмотрения в качестве кандидата на проведение ребер.
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\linewidth]{images/2.png}
         \caption{Вогнутая часть препятствия}
-        \label{fig:my_label}
+        \label{fig:concave}
     \end{figure}
     
     \item Если же указанные вершины образуют поворот против часовой стрелки, то вершина $cur$ является выпуклой. 
     В этом случае при обработке вершины $cur$ все ребра, построенные в вершины, лежащие внутри сектора, 
     образованного лучом из $\operatorname{prev}(cur)$ через $cur$ и лучом из $\operatorname{next}(cur)$ через $cur$, 
-    будут незначащими (рис. 2). Данное множество вершин может быть исключено из проверки видимости.
+    будут незначащими (рис. \ref{fig:convex}). Данное множество вершин может быть исключено из проверки видимости.
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\linewidth]{images/1.png}
         \caption{Выпуклая часть препятствия}
-        \label{fig:my_label}
+        \label{fig:convex}
     \end{figure}
     
 \end{enumerate}
@@ -349,7 +350,7 @@ V = \{S, T\} \cup \bigcup_{i=1}^k V(P_i),
     \item количество ребер: \(m = 6559\).
 \end{itemize}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.6\linewidth]{images/3.png}
     \caption{Исходный планарный граф}
@@ -359,7 +360,7 @@ V = \{S, T\} \cup \bigcup_{i=1}^k V(P_i),
 После применения алгоритма построения графа видимости количество ребер увеличилось до 12668. 
 Результирующий граф видимости представлен на рисунке~\ref{fig:visibility_graph}.
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.6\linewidth]{images/4.png}
     \caption{Построенный граф видимости}
