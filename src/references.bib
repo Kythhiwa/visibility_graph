@@ -4,7 +4,8 @@
   booktitle = {Proceedings of the 28th Annual Symposium on Foundations of Computer Science (FOCS'87)},
   publisher = {IEEE},
   year = {1987},
-  pages = {11--19}
+  pages = {11--19},
+  doi = {10.1109/SFCS.1987.6}
 }
 
 @inproceedings{OvermarsWelzl,
@@ -12,7 +13,8 @@
   title = {New Methods for Computing Visibility Graphs},
   booktitle = {Proceedings of the fourth annual symposium on Computational geometry (SCG'88)},
   year = {1988},
-  pages = {164--171}
+  pages = {164--171},
+  doi = {10.1145/73393.73410}
 }
 
 @inproceedings{nilsson69,
@@ -20,6 +22,7 @@
   title = {A mobile automaton: An application of artificial intelligence techniques},
   booktitle = {Proceedings of the 1st International Joint Conference on Artificial Intelligence (IJCAI'69)},
   year = {1969},
+  editor = {Donald E. Walker and Lewis M. Norton},
   pages = {509--520}
 }
 
@@ -32,23 +35,32 @@
 
 @techreport{coleman2012visibility,
   author = {Coleman, D.},
-  title = {Lee's O(n\string^2 log n)  visibility graph algorithm: Implementation and analysis},
+  title = {Lee's {$O(n^2 \log n)$} visibility graph algorithm: Implementation and analysis},
   institution = {University of Colorado at Boulder},
   year = {2012},
   type = {Technical report}
 }
 
-@inproceedings{nash07theta,
-  author = {Nash, A. and Daniel, K. and Koenig, S. and Felner, A.},
-  title = {Theta*: Any-angle path planning on grids},
-  booktitle = {Proc. of the AAAI Conference on Artificial Intelligence},
-  year = {2007}
+@article{theta,
+  title = {Theta*: Any-Angle Path Planning on Grids},
+  author = {Kenny Daniel and Alex Nash and Sven Koenig and Ariel Felner},
+  journal = {Journal of Artificial Intelligence Research},
+  volume = {39},
+  pages = {533--579},
+  year = {2010},
+  doi = {10.1613/jair.2994}
 }
 
 @inproceedings{nash10lazy,
   author = {Nash, A. and Koenig, S. and Tovey, C.},
-  title = {Lazy Theta*: Any-angle path planning and path length analysis in 3D},
+  title = {{Lazy Theta*}: Any-angle path planning and path length analysis in {3D}},
   booktitle = {Proc. of the AAAI Conference on Artificial Intelligence},
+  volume = {24},
+  editor = {Maria Fox and David Poole},
+  publisher = {AAAI Press},
+  address = {Palo Alto, California USA},
+  doi = {10.1609/aaai.v24i1.7566},
+  pages = {147--154},
   year = {2010}
 }
 
@@ -56,13 +68,18 @@
   author = {Harabor, D. and Grastien, A.},
   title = {An optimal any-angle pathfinding algorithm},
   booktitle = {Proc. of the International Conference on Automated Planning and Scheduling (ICAPS)},
-  year = {2016}
+  doi = {10.1609/icaps.v23i1.13609},
+  pages = {308--311},
+  editor = {Daniel Borrajo and Subbarao Kambhampati and Angelo Oddi and Simone Fratini},
+  volume = {23},
+  year = {2013}
 }
 
 @article{orourke98vertexedge,
   author = {O'Rourke, J. and Streinu, I.},
   title = {The vertex-edge visibility graph of a polygon},
-  journal = {Computational Geometry: Theory and Applications},
+  journal = {Computational Geometry},
+  doi = {10.1016/S0925-7721(97)00011-4},
   volume = {10},
   number = {2},
   pages = {105--120},
@@ -71,17 +88,20 @@
 
 @online{BGLadj,
   title = {Boost Graph Library: Adjacency List},
-  url = {https://www.boost.org/latest/libs/graph/doc/using_adjacency_list.html}
+  urldate = {2026-04-25}, 
+ url = {https://www.boost.org/latest/libs/graph/doc/using_adjacency_list.html}
 }
 
 @online{BGLCSR,
   title = {Boost Graph Library: Compressed Sparse Row},
+  urldate = {2026-04-25}, 
   url = {https://www.boost.org/latest/libs/graph/doc/compressed_sparse_row.html}
 }
 
 @online{LEMON,
   author = {{Egerváry Research Group}},
   title = {LEMON - Library for Efficient Modeling and Optimization in Networks},
+  urldate = {2026-04-25}, 
   url = {http://lemon.cs.elte.hu/trac/lemon}
 }
 
@@ -93,11 +113,13 @@
   number = {Suppl 1},
   pages = {P4},
   year = {2011},
-  url = {https://doi.org/10.1186/1758-2946-3-S1-P4}
+  url = {10.1186/1758-2946-3-S1-P4}
 }
 
 @online{IndigoGithub,
+  author = {{EPAM Systems}},
   title = {Indigo GitHub Repository},
+  urldate = {2026-04-25}, 
   url = {https://github.com/epam/Indigo}
 }
 
@@ -111,6 +133,7 @@
 
 @online{NOAA,
   author = {{U.S. Office of Coast Survey}},
-  title = {NOAA ENC Electronic Navigational Charts},
+  title = {{NOAA ENC} Electronic Navigational Charts},
+  urldate = {2026-04-25}, 
   url = {https://charts.noaa.gov/ENCs/ENCs.html}
 }
